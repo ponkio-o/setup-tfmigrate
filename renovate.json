@@ -1,5 +1,14 @@
 {
   "extends": ["config:base"],
   "labels": ["dependencies"],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "regexManagers": [
+    {
+      "fileMatch": ["README.md"],
+      "matchStrings": [
+        "version: (?<currentValue>.*?) # renovate: depName=(?<depName>.*)"
+      ],
+      "datasourceTemplate": "github-releases"
+    }
+  ]
 }
