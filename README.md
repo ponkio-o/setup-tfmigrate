@@ -9,7 +9,7 @@ steps:
   - name: Install tfmigrate
     uses: ponkio-o/setup-tfmigrate@v0.0.1
     with:
-      version: v0.3.3 #renovate: depName=minamijoyo/tfmigrate
+      version: v0.3.3 # renovate: depName=minamijoyo/tfmigrate
 ```
 
 ### Input
