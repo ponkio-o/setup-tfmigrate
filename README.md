@@ -2,18 +2,26 @@
 Sets up [tfmigrate](https://github.com/minamijoyo/tfmigrate) CLI in your GitHub Actions workflow. This actions runs install only.  
 
 ## Usage
+Currently only Linux is supported.
+
 ```yaml
 steps:
   - name: Install tfmigrate
     uses: ponkio-o/setup-tfmigrate@v0.0.1
     with:
-      version: v0.3.3
+      version: v0.3.3 #renovate: depName=minamijoyo/tfmigrate
 ```
 
-## Action inputs
-|Name   |Description      |Default|
-|-------|-----------------|-------|
-|version|tfmigrate version|latest |
+### Input
+See [action.yml](https://github.com/ponkio-o/setup-tfmigrate/blob/main/action.yml)
+
+#### `version`
+required: false
+
+The version of tfmigrate. Default is to use `latest`.  
+
+### Output
+None
 
 ## LICENSE
 MIT
