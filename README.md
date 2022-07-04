@@ -7,7 +7,7 @@ Currently only Linux is supported.
 ```yaml
 steps:
   - name: Install tfmigrate
-    uses: ponkio-o/setup-tfmigrate@v0.0.1
+    uses: ponkio-o/setup-tfmigrate@v0.1.0
     with:
       version: v0.3.3 # renovate: depName=minamijoyo/tfmigrate
 ```
